@@ -1,0 +1,340 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin-left: 5px;
+    margin-right: 5px;
+    background-color:cornsilk;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.menu{
+    float: right;
+    margin-right: 10%;
+    margin-top: 7%;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.direita{
+    width: 50%; 
+    margin: 0 auto; 
+    float: right;
+    margin-right: 100px;
+    margin-bottom: 2%;
+    text-align: right;
+    float: right;
+    background-color: #e9e9a5;
+    border-radius: 10px;
+    box-shadow:  0 0 5px 1px #333;
+}
+
+
+.texto-direita{
+    float: left; 
+    margin-right: 5px; 
+    margin-left: 30px;
+    margin-top: 30px;
+    width: 40%; 
+}
+
+.esquerda{
+    border-radius: 10px;
+    width: 50%; 
+    margin: 0 auto; 
+    margin-bottom: 2%;
+    float: left;
+    margin-left: 100px;
+    background-color:#BBBF45;
+    box-shadow:  0 0 5px 2px #333;
+}
+
+.texto-esquerda{
+    float: right; 
+    margin-right: 20px; 
+    margin-left: 0px;
+    margin-top: 80px;
+    width: 40%; 
+}
+
+.p-especial{
+    margin: 2%;
+}
+
+.valores{
+    float: right;
+    margin-right: 7%;
+    margin-bottom: 50px;
+    margin-top: 2%;
+    font-style: italic;
+    background-color: #E6C18D;
+    box-shadow:  0 0 10px 2px #333;}
+
+.titulo-valores{
+    font-size: 21px;
+}
+
+.caixa-esquerda{
+    text-align: left;
+    font-size: 20px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+.caixa-direita{
+    font-size: 20px;
+    float: right;
+    margin-right: 15%;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.caixa-centro{
+    font-size: 20px;
+    float: right ;
+    margin-right: 5%;
+    line-height: 28px;
+    margin-top: 30px;
+}
+
+.container-ecovila {
+    width: 80%; 
+    margin: 0 auto; 
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+.container-ecovila p{
+    vertical-align: top;
+    width: 40%;
+    float: right;
+    margin-top: 5%;
+}
+
+
+.parallax { 
+    padding:2em 0em; 
+    height: 450px; 
+    background: url(../imagens/ecovila2.jpg); 
+    background-position:center top; 
+    background-repeat:no-repeat; 
+    background-size:cover; 
+    background-attachment:fixed; 
+    
+}
+
+.apresentacao{
+    background-color: #677418;
+}
+.parallax2{
+    padding:2em 0em; 
+    height: 300px; 
+    width: 40%;
+    background: url(../imagens/ecovila.jpeg); 
+    background-position:left top; 
+    background-repeat:no-repeat; 
+    background-size:contain; 
+    background-attachment:fixed; 
+}
+
+.slider{
+    overflow: hidden;
+
+}
+.slider > .slider-content{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    transition: all 500ms ease;
+
+}
+
+.slider-item{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+
+.slider > .slider-content > .slider-item {
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+.slider > input:nth-child(1):checked ~ .slider-content{
+    transform: translateX(0%);
+}
+
+.slider > input:nth-child(2):checked ~ .slider-content{
+    transform: translateX(-100%);
+}
+.slider > input:nth-child(3):checked ~ .slider-content{
+    transform: translateX(-200%);
+}
+
+.slider > input:nth-child(4):checked ~ .slider-content{
+    transform: translateX(-300%);
+}
+
+.perguntas {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color:#6d7c17;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq input {
+    display: none;
+}
+
+.faq label {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+    display: block;
+}
+
+.faq label:hover {
+    background: #e8f5e9;
+}
+
+.faq p {
+    max-height: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0 10px;
+    border-left: 3px solid #0f5011;
+    background: #f1f8e9;
+    transition: max-height 0.3s ease;
+}
+
+.faq input:checked ~ p {
+    max-height: 200px;
+    padding: 10px;
+}
+
+.container-sobre {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 650px ;
+    mix-blend-mode: multiply;
+    margin-bottom: 1%;
+}
+
+.titulo-sobre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+    font-weight: bold;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 95px;
+    text-align: center;
+}
+
+#logo{
+    margin-left: 15%;
+}
+
+#chamada{
+    text-align: center;
+    text-align: justify;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 20px;
+    padding: 15px;
+}
+
+#principal2{
+    width: 100%;
+    height: 650px;
+    display: flex;
+    filter:brightness(0.8);
+
+}
+
+#direitos{
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+a{
+    margin: 20px;
+    color: #333;
+}
+
+a:hover{
+    font-size: 23px;
+    color: #BF7B54;
+}
+
+header{
+    background-color: beige;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+h1{
+    text-align: center;
+    font-size: 45px;
+    margin: 5px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 38px;
+    margin: 5px;
+    color: #384001;
+    padding: 20px;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h3{
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 25px;
+    padding: 15px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+h4{
+    font-size: 22px;
+    margin-bottom: 10px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 21px;
+    line-height: 30px;
+}
+
+footer{
+    background-color: #e9e9a5;
+}
+
+
